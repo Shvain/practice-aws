@@ -80,13 +80,13 @@ build {
   }
 
   # サーバーの起動
-  provisioner "shell" {
-    inline = [
-      "cd /home/ec2-user/app",
-      "npm install",
-      "chmod +x node_modules/.bin/*",
-      "npm run build",
-      "chown -R ec2-user:ec2-user /home/ec2-user/app",
-    ]
-  }
+  # provisioner "shell" {
+  #   inline = [
+  #     "cd /home/ec2-user/app",
+  #     "npm install",
+  #     "chmod +x node_modules/.bin/*",
+  #     "npm run build",
+  #     "chown -R ec2-user:ec2-user /home/ec2-user/app",
+  #   ]
+  # }
 }
